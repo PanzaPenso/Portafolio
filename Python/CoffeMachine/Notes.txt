@@ -1,0 +1,20 @@
+1. Makes 3 hot flavours
+- Espresso
+- Latter
+- Cappucino
+
+2. Coin Opereated
+- Penny - 1 cent
+- Dime - 10 cents
+- Nickel - 5 cents
+- Quarter - 25 cents
+
+Requirements
+# TODO: 1. print report
+# TODO: 2. Check resources sufficient
+# TODO: 3. Process coins
+# TODO: 4. Check Transaction succesful
+# TODO: 5. Make Coffe
+
+
+
