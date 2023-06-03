@@ -1,3 +1,5 @@
+import json
+
 from bs4 import BeautifulSoup
 import requests
 import spotipy
@@ -5,19 +7,20 @@ from spotipy.oauth2 import SpotifyOAuth
 
 CLIENT_ID = "e3a28fda71f846969bffee8cf048da83"
 CLIENT_PASS = "b1ec8b7c64df4d9c805eb685eb54e03a"
+#TOKEN = "AQDB2DqabL-sQKuZbZW-r5V2M3G81qgZx5lbAu-waJoDDIUtcgAROnD8PD10qDUn_B-_ZXxI2Do5o0GwgxCQ1O8Yk6jwbX--eSHWv_wr8GwHD8HRUE2ej0G6_5qp2nligmBjWL7SjUU7KKEvdn1ELvj0zu2lGLhdhSXP9y1lRpKC3Xc7tupYA-ml9Jv3mPbxHoB6GQcxAdmn"
 
 # sp = spotipy.Spotify(auth_manager=SpotifyOAuth(client_id=CLIENT_ID,
 #                                                client_secret=CLIENT_PASS,
 #                                                redirect_uri="http://example.com",
 #                                                scope="user-library-read"))
 
-sp = spotipy.oauth2.SpotifyOAuth(client_id=CLIENT_ID,
-                                 client_secret=CLIENT_PASS,
-                                 redirect_uri="http://example.com/callback/",
-                                 scope="playlist-modify-private",
-                                 )
-
-print(sp.get_auth_response())
+# sp = spotipy.oauth2.SpotifyOAuth(client_id=CLIENT_ID,
+#                                  client_secret=CLIENT_PASS,
+#                                  redirect_uri="http://example.com/callback/",
+#                                  scope="playlist-modify-private",
+#                                  )
+#
+# print(sp.get_auth_response())
 
 # sp = spotipy.Spotify(
 #     auth_manager=SpotifyOAuth(
@@ -26,9 +29,11 @@ print(sp.get_auth_response())
 #         client_id=CLIENT_ID,
 #         client_secret=CLIENT_PASS,
 #         show_dialog=True,
-#         cache_path="token.txt"
+#         cache_path="./token.txt"
 #     )
 # )
+# user_id = sp.current_user()
+# print(json.dump(user_id, sort_keys=True, indent=4))
 
 
 
