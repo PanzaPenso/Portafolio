@@ -1,35 +1,24 @@
 from bs4 import BeautifulSoup
-#import lxml
+import requests
 
-with open("website.html") as file:
-    contents = file.read()
+response = requests.get("https://news.ycombinator.com/")
+yc_web_page = response.text
 
-soup = BeautifulSoup(contents, 'html.parser')
-# print(soup.title)
-# print(soup.title.name)
-# print(soup.title.string)
-# print(soup.prettify())
-# print(soup.a)
+soup = BeautifulSoup(yc_web_page, "html.parser")
+parent_tag = soup.find_all("tr", class_="athing")
+score_tag = soup.find_all("span", class_="score")
 
-all_anchor_tags = soup.findAll(name="a")
-print(all_anchor_tags)
+score_list = [int(score.text.split()[0]) for score in score_tag]
+score_list.insert(11, 0)
 
-print("\n")
-for tag in all_anchor_tags:
-    # print(tag.getText())
-    print(tag.get("href"))
+rank_list = []
+anchor_tags = []
+for tag in parent_tag:
+    rank_list.append(tag.select(".rank"))
+    anchor_tags.append(tag.select("td span a"))
 
-print("\n")
+final_list = []
+for item in range(0, len(rank_list)):
+    final_list.append((rank_list[item][0].text, anchor_tags[item][0].get("href"), anchor_tags[item][0].text, score_list[item]))
 
-heading = soup.find(name="h1", id="name")
-print(heading.string)
-
-print("\n")
-section_heading = soup.find(name="h3", class_="heading")
-print(section_heading)
-
-print("\n")
-company_url = soup.select_one(selector="p a") # se puede seleccionar clases .clase e ids #id
-print(company_url)
-
-
+print(final_list[score_list.index(max(score_list))])
