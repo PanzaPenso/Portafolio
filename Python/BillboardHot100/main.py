@@ -13,9 +13,10 @@ CLIENT_PASS = "b1ec8b7c64df4d9c805eb685eb54e03a"
 
 sp = spotipy.oauth2.SpotifyOAuth(client_id=CLIENT_ID,
                                  client_secret=CLIENT_PASS,
-                                 redirect_uri="http://example.com",
+                                 redirect_uri="http://example.com/callback",
                                  scope="playlist-modify-private",
-                                 )
+                                 show_dialog=True,
+                                 cache_path="./token.txt")
 
 print(sp.get_auth_response())
 
