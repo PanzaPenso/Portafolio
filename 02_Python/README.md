@@ -1,4 +1,50 @@
-## 100 Movies that You Must Watch
+# Introduction
+
+Python is a high-level, versatile programming language known for its simplicity and readability. It emphasizes code readability and allows developers to express ideas in fewer lines of code. 
+Python supports multiple programming paradigms and is widely used for web development, data analysis, artificial intelligence, scientific computing, and more. 
+It boasts a rich ecosystem of libraries and frameworks, making it a popular choice for a wide range of applications.
+
+In this repository, you will find a series of exercises to practice and understand Python functionalities. 
+This repository is intended for people who want to find exercises to improve their programming skills. 
+
+# Projects Descriptions
+
+1. [100 Movies to watch](#100-Movies-that-You-Must-Watch)
+2. Automated Birthday Wisher
+3. Back Pack Problem
+4. Billboard Hot 100
+5. Bs4
+6. Coffee Machine With Classes
+7. Coffee Machine
+8. Color Detection
+9. Flash Cards
+10. Getting Color
+11. Hirst Painting
+12. Internation Space Location
+13. Kanye Quotes
+14. Mail Merge
+15. Mile To Km Converter
+16. Nato
+17. Parkinson
+18. Password Manager
+19. Pomodoro
+20. Pong Game
+21. Quiz Game
+22. Quizzler App
+23. Rain Alert
+24. Snake Game
+25. Tetrix Matrix
+26. Tkinter Example
+27. Turtle
+28. Turtle Crossing
+29. Turtle Race
+30. Us States Game
+31. Weather
+32. Workout Training
+
+
+
+### 100 Movies That You Must Watch
 
 # Objective
 
