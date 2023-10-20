@@ -1,0 +1,33 @@
+body {
+    font-family: Courier;
+    text-align: center;
+  }
+  
+  h1 {
+    color: rebeccapurple;
+  }
+  
+  a {
+    background-color: indianred;
+    color: white;
+  }
+  
+  div {
+    border: solid 2px black;
+    padding: 10px;
+    background-color: peachpuff;
+    margin: 20px;
+  }
+  
+  img {
+    border-radius: 20px;
+    border: solid 5px white;
+    width: 150px;
+  }
+  
+  button {
+    padding: 10px;
+    color: white;
+    background-color: black;
+    font-size: 20px;
+  }
