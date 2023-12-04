@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <title>Pixel Paws</title>
+  </head>
+  <body>
+    <h1>Pixel Paws</h1>
+    <div class="pet-container">
+      <div class="pet" id="pet1" onclick="selectPet(1)">
+        <div class="emoji">
+        </div>
+        <p>Saturation Level: <span id="hunger1">100</span></p>
+        <p id="message1"></p>
+      </div>
+      <div class="pet" id="pet2" onclick="selectPet(2)">
+        <div class="emoji">
+        </div>
+        <p>Saturation Level: <span id="hunger2">100</span></p>
+        <p id="message2"></p>
+      </div>
+    </div>
+    <div class="emoji treat" id="treat1" onclick="feedPet(1)">
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
